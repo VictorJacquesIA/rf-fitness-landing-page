@@ -579,10 +579,11 @@
             }
 
             .hero {
-                padding-top: 140px;
-                /* Evita que o texto fique atrás do logo */
-                padding-bottom: 60px;
-                /* Garante que o botão não seja cortado */
+                padding-top: 140px; /* Evita que o texto fique atrás do logo */
+                padding-bottom: 80px; 
+                min-height: 85vh; /* Altura mais estável para mobile */
+                background-attachment: scroll; /* Vital: evita o "pulo" no mobile */
+                background-position: center center;
                 text-align: center;
                 align-items: flex-start;
             }
